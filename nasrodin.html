@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="somebody">
+    <meta http-equiv="refresh" content="1000">
+    <title>HTML-CSS Layout</title>
+    <style>
+       body {
+        background-image: linear-gradient(to bottom right, orange, yellow);
+        padding: 50px 70px;
+       }
+
+       .grid {
+          display: grid;
+          grid-template-columns: 1fr 400px;
+          grid-template-rows: 80px 70px 1fr 1fr 70px;
+          height: 100vh;
+          gap: 2px;
+       }
+       
+       h1 {
+          color: #000000;
+          text-align: center;
+          font-size: 40px;
+          font-family: Arial, Helvetica, sans-serif;
+       }
+
+       #h2 {
+        color: rgb(0, 0, 0);
+       }
+       
+       #h1 {
+        text-align: center;
+        color: rgb(0, 0, 0);
+       }
+       #hi {
+        color: rgb(0, 0, 0);
+        font-size: 110%;
+       }
+
+       header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+
+       nav {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+       .topnav a {
+        float: left;
+        display: block;
+        color: #000000;
+        text-align: center;
+        padding: 20px 30px;
+        text-decoration: none;
+    }
+    .topnav a:hover {
+       background-color: #ffffff;
+       color: black;
+    }
+
+
+       section {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        border: 2px solid black;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+       }
+
+       aside {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        border: 2px solid black;
+        padding: 10px;
+        font-size: 100%;
+        color: rgb(0, 0, 0);
+       }
+
+       article {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        border: 2px solid black;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+       }
+
+       footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+
+       }
+       img {
+        width: 600px;
+        height: 315px;
+       }
+    </style>
+</head>
+<body>
+    <h1>HTML LAYOUT</h1>
+    <div class="grid">
+        <header>
+            <h2 id="h1"> Famous Scientists and Their Contributions</h2>
+        </header>
+        <nav>
+            <div class="topnav">
+                <p style="text-align: center;"> <a href="nasrodin.html">ALBERT EINSTEIN</a> </p>
+                  <p style="text-align: center;"> <a href="N2.html"> MARIE CURIE</a></p>
+                <p style="text-align: center;"> <a href="N3.html">ISAAC NEWTON</a></p>
+            </div>
+        </nav>
+        <section>
+            <p style="text-align: center;"> <img src="scientist.jpg"> </p>
+            From unraveling the mysteries of the cosmos to unearthing the origins of humanity, 
+            these famous scientists have not only expanded the boundaries of human knowledge but have also profoundly altered the way we live, 
+            work, and perceive the world around us. The relentless pursuit of knowledge by these visionary thinkers has propelled humanity 
+            forward in ways that were once unimaginable. <br>
+        </section>
+        <aside>
+            <h2 id="h2">Albert Einstein: The Whole Package</h2>
+            <b>Albert Einstein was not only a scientific genius but also a figure of enduring popularity and intrigue. 
+                His remarkable contributions to science, which include the famous equation E = mc2 and the theory of relativity, 
+                challenged conventional notions and reshaped our understanding of the universe. </b> <br>
+                <br>
+                EARLY LIFE<br>
+                <p>Born in Ulm, Germany, in 1879, Einstein was a precocious child. As a teenager, he wrote a paper on magnetic fields. 
+                    (Einstein never actually failed math, contrary to popular lore.) His career trajectory began as a clerk in the Swiss 
+                    Patent Office in 1905, where he published his four groundbreaking papers, including his famous equation, E = mc2, which 
+                    described the relationship between matter and energy.</p><br>
+                    Contributions<br>
+                <p>Einstein's watershed year of 1905 marked the publication of his most important papers, addressing topics such as Brownian 
+                    motion, the photoelectric effect and special relativity. His work in special relativity introduced the idea that space and 
+                    time are interwoven, laying the foundation for modern astronomy. In 1916, he expanded on his theory of relativity with the 
+                    development of general relativity, proposing that mass distorts the fabric of space and time.</p><br>
+        </aside>
+        <article>
+            <h2 id="h2">Albert Einstein Legacy</h2>
+            <p>Alight-years away. General relativity also underpins the concept of gravitational lensing, enabling astronomers to study distant 
+                cosmic objects in unprecedented detail.<br>
+               <br>lbert Einstein's theory of general relativity remains one of his most celebrated achievements. It predicted the existence of black 
+                holes and gravitational waves, with physicists recently measuring the waves from the collision of two black holes over a billion 
+                
+               “Einstein remains the last, and perhaps only, physicist ever to become a household name,” says James Overduin, a 
+               theoretical physicist at Towson University in Maryland.<br>
+                <br>
+                Einstein's legacy goes beyond his scientific contributions. He is remembered for his imaginative thinking, a quality that led to his 
+                greatest insights. His influence as a public figure and his advocacy for civil rights continue to inspire generations.<br>
+
+            </p><br>
+        </article>
+        <footer>
+            <h1 id="hi">“I am enough of an artist to draw freely upon my imagination,” he said in a Saturday Evening Post interview. “Knowledge is limited. Imagination encircles the world.”</h1>
+        </footer>
+    </div>
+</body>
+</html>

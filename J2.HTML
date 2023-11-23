@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="somebody">
+    <meta http-equiv="refresh" content="1000">
+    <title>HTML-CSS Layout</title>
+    <style>
+       body {
+        background-image: linear-gradient(to bottom right, purple, blue);
+        padding: 50px 70px;
+       }
+
+       .grid {
+          display: grid;
+          grid-template-columns: 1fr 400px;
+          grid-template-rows: 80px 70px 1fr 1fr 70px;
+          height: 100vh;
+          gap: 2px;
+       }
+
+       h1,h2,h3 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+       }
+       
+       h1 {
+          color: #000000;
+          text-align: center;
+          font-size: 40px;
+          font-family: Arial, Helvetica, sans-serif;
+       }
+
+       #h2 {
+        color: rgb(0, 0, 0);
+        text-align: center;
+       }
+       
+       #h1 {
+        text-align: center;
+        color: rgb(0, 0, 0);
+       }
+       #hi {
+        color: rgb(0, 0, 0);
+        font-size: 110%;
+       }
+
+       header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+
+       nav {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+       .topnav a {
+        float: left;
+        display: block;
+        color: #000000;
+        text-align: center;
+        padding: 20px 30px;
+        text-decoration: none;
+    }
+    .topnav a:hover {
+       background-color: #ffffff;
+       color: black;
+    }
+
+
+       section {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        border: 2px solid black;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+       }
+
+       aside {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        border: 2px solid black;
+        padding: 10px;
+        font-size: 130%;
+        color: rgb(0, 0, 0);
+       }
+
+       article {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        border: 2px solid black;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+       }
+
+       footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+
+       }
+       img {
+        text-align: center;
+        width: 600px;
+        height: 315px;
+     
+       }
+    </style>
+</head>
+<body>
+    <h1>HTML LAYOUT</h1>
+    <div class="grid">  
+        <header>
+            <h2 id="h1">Leonardo da Vinci</h2>
+        </header>
+        <nav>
+            <div class="topnav">
+                <p style="text-align: center;"> <a href="joseph.html"> VINCENT VAN GOGH</a> </p>
+                  <p style="text-align: center;"> <a href="J2.HTML">  LEONARDO DA VINCI</a></p>
+                <p style="text-align: center;"> <a href="J3.html">PABLO PICASSO</a></p>
+            </div>
+        </nav>
+        <section>
+            <h2 id="h1">Leonardo da Vinci</h2>
+            The celebrated Italian polymath created some of the most famous paintings of all time. A talented draughtsman, architect, sculptor, 
+            engineer and artist, Leonardo was also an inventor.<br>
+        </section>
+        <aside>
+            <h2 id="h2">DEFINITIONS</h2>
+            <b>He imagined all manner of innovations, such as a helicopter, calculator, parachute and diving suit. You can see the models for 
+                many of these inventions at Le Clos Lucé, the beautiful French chateau where Leonardo lived for several years.</b> <br>
+                <p>One of the most famous sketch artists ever, Leonardo filled notebooks with his drawings. <i>The Vitruvian Man</i> is an ink on paper sketch that depicts perfect human body proportions.</p>
+                <p>Leonardo perfected the sfumato technique of painting. Translating as “soft” or “blurred”, this painting style creates subtle 
+                    blending without harsh contours. The technique was used to great effect in Leonardo’s painting of the Mona Lisa.</p>
+        </aside>
+        <article>
+            <h2 id="h2">Famous Leonardo paintings: </h2>
+            <p style="text-align: center;">Mona Lisa (also known as La Gioconda), The Last Supper, Lady with an Ermine, Virgin of the Rocks.<br>
+            <p style="text-align: center;"> <img src="mona.jpg"></p>
+
+            </p>
+        </article>
+        <footer>
+            <h1 id="hi">To recap, these are some of the most famous painters in the world:</h1>
+        </footer>
+    </div>
+</body>
+</html>

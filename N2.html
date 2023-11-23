@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="somebody">
+    <meta http-equiv="refresh" content="1000">
+    <title>HTML-CSS Layout</title>
+    <style>
+       body {
+        background-image: linear-gradient(to bottom right, orange, yellow);
+        padding: 50px 70px;
+       }
+
+       .grid {
+          display: grid;
+          grid-template-columns: 1fr 400px;
+          grid-template-rows: 80px 70px 1fr 1fr 70px;
+          height: 100vh;
+          gap: 2px;
+       }
+       
+       h1 {
+          color: #000000;
+          text-align: center;
+          font-size: 40px;
+          font-family: Arial, Helvetica, sans-serif;
+       }
+
+       #h2 {
+        color: rgb(0, 0, 0);
+       }
+       
+       #h1 {
+        text-align: center;
+        color: rgb(0, 0, 0);
+       }
+       #hi {
+        color: rgb(0, 0, 0);
+        font-size: 110%;
+       }
+
+       header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+
+       nav {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+       .topnav a {
+        float: left;
+        display: block;
+        color: #000000;
+        text-align: center;
+        padding: 20px 30px;
+        text-decoration: none;
+    }
+    .topnav a:hover {
+       background-color: #ffffff;
+       color: black;
+    }
+
+
+       section {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        border: 2px solid black;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+       }
+
+       aside {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        border: 2px solid black;
+        padding: 10px;
+        font-size: 90%;
+        color: rgb(0, 0, 0);
+       }
+
+       article {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        border: 2px solid black;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+       }
+
+       footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+
+       }
+       img {
+        width: 600px;
+        height: 315px;
+       }
+    </style>
+</head>
+<body>
+    <h1>HTML LAYOUT</h1>
+    <div class="grid">
+        <header>
+            <h2 id="h1"> Marie Curie: She Went Her Own Way</h2>
+        </header>
+        <nav>
+            <div class="topnav">
+                <p style="text-align: center;"> <a href="nasrodin.html">ALBERT EINSTEIN</a> </p>
+                  <p style="text-align: center;"> <a href="N2.html"> MARIE CURIE</a></p>
+                <p style="text-align: center;"> <a href="N3.html">ISAAC NEWTON</a></p>
+            </div>
+        </nav>
+        <section>
+            <h2 id="h1">Marie Curie: She Went Her Own Way</h2>
+            Marie Curie's remarkable journey to scientific acclaim was characterized by determination and a thirst for knowledge. 
+            Living amidst poverty and political turmoil, her unwavering passion for learning and her contributions to the fields of physics 
+            and chemistry have made an everlasting impact on the world of science.<br>
+        </section>
+        <aside>
+            <h2 id="h2">Early Life</h2>
+            <b>Marie Curie, born as Maria Salomea Sklodowska in 1867 in Warsaw, Poland, faced immense challenges during her early life due to 
+                both her gender and her family's financial struggles. Her parents, fervent Polish patriots, sacrificed their wealth in support 
+                of their homeland's fight for independence from Russian, Austrian, and Prussian rule. Despite these hardships, Marie's parents, 
+                who were educators themselves, instilled a deep love for learning and Polish culture in her </b> <br>
+                <br>
+                    CONTRIBUTIONS<br>
+                <p>Marie Curie's path to scientific greatness began when she arrived in Paris in 1891 to pursue higher education. Inspired by 
+                    the work of French physicist Henri Becquerel, who discovered the emissions of uranium, Marie chose to explore uranium's 
+                    rays for her Ph.D. thesis. Her research led her to the groundbreaking discovery of radioactivity, revealing that matter 
+                    could undergo atomic-level transformations.</p><br>
+        </aside>
+        <article>
+            <h2 id="h2">Marie Curie Awards</h2>
+            <p>Tragedy struck in 1906 when Pierre Curie died suddenly in a carriage accident. Despite her grief, Marie Curie persevered and 
+                continued her research, taking over Pierre's position at the University of Paris. In 1911, she earned her second Nobel Prize, 
+                this time in Chemistry, for her remarkable contributions to the fields of polonium and radium.<br>
+               <br>
+               Tragedy struck in 1906 when Pierre Curie died suddenly in a carriage accident. Despite her grief, Marie Curie persevered and 
+               continued her research, taking over Pierre's position at the University of Paris. In 1911, she earned her second Nobel Prize, 
+               this time in Chemistry, for her remarkable contributions to the fields of polonium and radium.<br> </p>
+        </article>
+        <footer>
+            <h1 id="hi">Read More: <a href="https://www.discovermagazine.com/health/marie-curie-iconic-scientist-nobel-prize-winner-war-hero">
+                https://www.discovermagazine.com/health/marie-curie-iconic-scientist-nobel-prize-winner-war-hero</a></h1>
+        </footer>
+    </div>
+</body>
+</html>

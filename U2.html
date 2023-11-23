@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="somebody">
+    <meta http-equiv="refresh" content="1000">
+    <title>HTML-CSS Layout</title>
+    <style>
+       body {
+        background-image: linear-gradient(to bottom right, yellow, green);
+        padding: 50px 70px;
+       }
+
+       .grid {
+          display: grid;
+          grid-template-columns: 1fr 400px;
+          grid-template-rows: 80px 70px 1fr 1fr 70px;
+          height: 100vh;
+          gap: 2px;
+       }
+
+       h1,h2,h3 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+       }
+       
+       h1 {
+          color: #000000;
+          text-align: center;
+          font-size: 40px;
+          font-family: Arial, Helvetica, sans-serif;
+       }
+
+       #h2 {
+        color: rgb(0, 0, 0);
+        text-align: center;
+       }
+       
+       #h1 {
+        text-align: center;
+        color: rgb(0, 0, 0);
+       }
+       #hi {
+        color: rgb(0, 0, 0);
+        font-size: 110%;
+       }
+
+       header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+
+       nav {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+       .topnav a {
+        float: left;
+        display: block;
+        color: #000000;
+        text-align: center;
+        padding: 20px 30px;
+        text-decoration: none;
+    }
+    .topnav a:hover {
+       background-color: #ffffff;
+       color: black;
+    }
+
+
+       section {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        border: 2px solid black;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+       }
+
+       aside {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        border: 2px solid black;
+        padding: 10px;
+        font-size: 100%;
+        color: rgb(0, 0, 0);
+       }
+
+       article {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        border: 2px solid black;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+       }
+
+       footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+
+       }
+       img {
+        text-align: center;
+        width: 600px;
+        height: 315px;
+     
+       }
+    </style>
+</head>
+<body>
+    <h1>HTML LAYOUT</h1>
+    <div class="grid">  
+        <header>
+            <h2 id="h1"> LUDWIG VAN BEETHOVEN</h2>
+        </header>
+        <nav>
+            <div class="topnav">
+                <p style="text-align: center;"> <a href="uno.html"> Antonio Vivaldi</a> </p>
+                  <p style="text-align: center;"> <a href="U2.html">  Ludwig Van Beethoven</a></p>
+                <p style="text-align: center;"> <a href="U3.html">The Beatles</a></p>
+            </div>
+        </nav>
+        <section>
+            <h2 id="h1">Ludwig Van Beethoven</h2>
+            Considered the best composer of all time, Beethoven challenged authority by refusing to accept the cultural norms of the day. 
+            His soulful sonatas and symphonies broke the boundaries of the Classical Era — defined by technical mastery — and ushered in a 
+            new period, the Romantic Era. Being deaf didn't stop him from composing masterpieces that endure to this day in movies like Ace 
+            Ventura: Pet Detective. -Gabrielle Canon</b><br>
+        </section>
+        <aside>
+            <h2 id="h2">More Details About Ludwig Van Beethoven</h2>
+            <b> Ludwig van Beethoven[n 1] (baptised 17 December 1770 – 26 March 1827) was a German composer and pianist. Beethoven remains one 
+                of the most admired composers in the history of Western music; his works rank among the most performed of the classical music 
+                repertoire and span the transition from the Classical period to the Romantic era in classical music. His career has 
+                conventionally been divided into early, middle, and late periods. His early period, during which he forged his craft, is 
+                typically considered to have lasted until 1802. From 1802 to around 1812, his middle period showed an individual development 
+                from the styles of Joseph Haydn and Wolfgang Amadeus Mozart, and is sometimes characterized as heroic. During this time, he 
+                began to grow increasingly deaf. In his late period, from 1812 to 1827, he extended his innovations in musical form and
+                 expression.</b>
+                <p>VAfter 1810, increasingly less socially involved, Beethoven composed many of his most admired works, including later 
+                    symphonies, mature chamber music and the late piano sonatas. His only opera, Fidelio, first performed in 1805, was revised 
+                    to its final version in 1814. </p>
+        </aside>
+        <article>
+            <h2 id="h2">Ludwig Van Beethoven Portray </h2>
+            <p style="text-align: center;"> <img src="ludqig.jpg"></p>
+
+            </p>
+        </article>
+        <footer>
+            <h1 id="hi">To recap, these are some of the most famous musician/composer in the world:</h1>
+        </footer>
+    </div>
+</body>
+</html>

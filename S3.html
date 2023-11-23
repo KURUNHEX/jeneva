@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="somebody">
+    <meta http-equiv="refresh" content="1000">
+    <title>HTML-CSS Layout</title>
+    <style>
+       body {
+        background-image: linear-gradient(to bottom right, blue, white);
+        padding: 50px 70px;
+       }
+
+       .grid {
+          display: grid;
+          grid-template-columns: 1fr 400px;
+          grid-template-rows: 80px 70px 1fr 1fr 70px;
+          height: 100vh;
+          gap: 2px;
+       }
+       
+       h1 {
+          color: #ffffff;
+          text-align: center;
+          font-size: 40px;
+          font-family: Arial, Helvetica, sans-serif;
+       }
+
+       #h2 {
+        color: rgb(0, 0, 0);
+       }
+       
+       #h1 {
+        text-align: center;
+        color: white;
+       }
+       #hi {
+        color: rgb(0, 0, 0);
+        font-size: 150%;
+       }
+
+       header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+
+       nav {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+       .topnav a {
+        float: left;
+        display: block;
+        color: #000000;
+        text-align: center;
+        padding: 20px 30px;
+        text-decoration: none;
+    }
+    .topnav a:hover {
+       background-color: #ffffff;
+       color: black;
+    }
+
+
+       section {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        border: 2px solid black;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+        font-size: 120%;
+       }
+
+       aside {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        border: 2px solid black;
+        padding: 10px;
+        font-size: 130%;
+        color: rgb(0, 0, 0);
+       }
+
+       article {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        border: 2px solid black;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+        font-size: 110%;
+       }
+
+       footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+
+       }
+    </style>
+</head>
+<body>
+    <h1>HTML LAYOUT</h1>
+    <div class="grid">
+        <header>
+            <h2 id="h1"> CONS/DISADVANTAGES</h2>
+        </header>
+        <nav>
+            <div class="topnav">
+                <p style="text-align: center;"> <a href="stefano.html">DEFINITIONS & TYPES</a> </p>
+                  <p style="text-align: center;"> <a href="S2.html">ADVANTAGES</a></p>
+                <p style="text-align: center;"> <a href="S3.html">DISADVANTAGES</a></p>
+            </div>
+        </nav>
+        <section>
+            <h2 id="h2">Why is social media bad?    </h2>
+            <p>Along with the good comes the bad. With all of its benefits, the nature of social media presents a range of potential issues.<br>
+                <br>
+            <b>Online vs Reality.</b>Social media itself is not the problem. It is the way people use it in place of actual communication and in-person 
+            socializing. “Friends” on social media may not actually be friends, and may even be strangers.The more time spent on social media can lead to cyberbullying, social anxiety, depression, 
+            and exposure to content that is not age appropriate.<br>
+            <b>Increased usage.</b>Social media itself is not the problem. It is the way people use it in place of actual communication and 
+            in-person socializing. “Friends” on social media may not actually be friends, and may even be strangers.<br>
+            <b>Social Media is addicting.</b>When you’re playing a game or accomplishing a task, you seek to do it as well as you can. 
+            Once you succeed, your brain will give you a dose of dopamine and other happiness hormones, making you happy. The same mechanism 
+            functions when you post a picture to Instagram or Facebook. Once you see all the notifications for likes and positive comments 
+            popping up on your screen, you’ll subconsciously register it as a reward. But that’s not all, social media is full of mood-modifying
+            experiences.<br>
+            </p>
+        </section>
+        <aside>
+            <h2 id="h2">Social media and bullying </h2>
+            <p> Sadly, there is an ugly side to all that technology offers. While bullying is not a new concept, social media and technology 
+                have brought bullying to a new level. It becomes a more constant, ever-present threat -- cyberbullying. The State of Rhode 
+                Island anti-bullying laws & regulations define bullying and cyberbullying as follows:<br>
+                <ul>
+                    <li>causes physical or emotional harm to the student or damage to the student's property</li>
+                     <li>laces the student in reasonable fear of harm to himself/herself or of damage to his/her property</li>
+                    <li>creates an intimidating, threatening, hostile, or abusive educational environment for the student</li>
+                    <li>infringes on the rights of the student to participate in school activities</li>
+                    <li>materially and substantially disrupts the education process or the orderly operation of a school</li>
+                </ul>
+            </p>
+        </aside>
+        <article>
+            <h2 id="h2">Social media and suicide</h2>
+            <p>Sadly, the cons of social media can take a toll on young minds. Suicide remains among the leading causes of death of children under age 14.  In most cases, young people die from hanging.<br>
+               <br>
+               <ul>
+                  <li> Suicide rates among 10- to 14-year-olds have grown more than 50 percent over the last three decades, according to the American Association of Suicidology.</li>
+                   <li>Suicide rates among children between the ages of 10 and 14 are very low, but are creeping up, according to the American Foundation for Suicide Prevention.</li>
+                </ul>
+                
+                <b> What can parents do?</b><br>
+                As parents, there are things we can do to improve our children’s lives online and in real life.<br>
+
+            </p><br>
+        </article>
+        <footer>
+            <h1 id="hi"> ANOTHER SIDE OF USING SOCIAL MEDIA </h1>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="somebody">
+    <meta http-equiv="refresh" content="1000">
+    <title>HTML-CSS Layout</title>
+    <style>
+       body {
+        background-image: linear-gradient(to bottom right, blue, white);
+        padding: 50px 70px;
+       }
+
+       .grid {
+          display: grid;
+          grid-template-columns: 1fr 400px;
+          grid-template-rows: 80px 70px 1fr 1fr 70px;
+          height: 100vh;
+          gap: 2px;
+       }
+       
+       h1 {
+          color: #ffffff;
+          text-align: center;
+          font-size: 40px;
+          font-family: Arial, Helvetica, sans-serif;
+       }
+
+       #h2 {
+        color: rgb(0, 0, 0);
+       }
+       
+       #h1 {
+        text-align: center;
+        color: white;
+       }
+       #hi {
+        color: rgb(0, 0, 0);
+        font-size: 150%;
+       }
+
+       header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+
+       nav {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+       .topnav a {
+        float: left;
+        display: block;
+        color: #000000;
+        text-align: center;
+        padding: 20px 30px;
+        text-decoration: none;
+    }
+    .topnav a:hover {
+       background-color: #ffffff;
+       color: black;
+    }
+
+
+       section {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        border: 2px solid black;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+        font-size: 120%;
+       }
+
+       aside {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        border: 2px solid black;
+        padding: 10px;
+        font-size: 100%;
+        color: rgb(0, 0, 0);
+       }
+
+       article {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        border: 2px solid black;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+        font-size: 110%;
+       }
+
+       footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+
+       }
+    </style>
+</head>
+<body>
+    <h1>HTML LAYOUT</h1>
+    <div class="grid">
+        <header>
+            <h2 id="h1"> PROS/ADVANTAGES</h2>
+        </header>
+        <nav>
+            <div class="topnav">
+                <p style="text-align: center;"> <a href="stefano.html">DEFINITIONS & TYPES</a> </p>
+                  <p style="text-align: center;"> <a href="S2.html">ADVANTAGES</a></p>
+                <p style="text-align: center;"> <a href="S3.html">DISADVANTAGES</a></p>
+            </div>
+        </nav>
+        <section>
+            <h2 id="h2">What are the benefits of social media?</h2>
+            <p>Social media helps children communicate, share and learn, and offers opportunity for children to practice key 21st century skills
+               they will use into the future.</p>
+        </section>
+        <aside>
+            <h2 id="h2">How can social media assist in building digital skills?</h2>
+            <p> Technology has become a core part of our world. Ongoing developments into mixed reality, automation and artificial intelligence 
+                will have a major impact on what jobs look like in the future. For this reason, digital skills are becoming not only important, 
+                but essential. The Foundation for Young Australians report on New Work Smarts (PDF, 1.9MB) predicts that future jobs will be 
+                less focused on routine tasks and more on working with people and solving problems. Young people can use social media to develop these skills.</p><br>
+                Social media can help children build digital skills in:<br>
+                <ul>
+                    <li>navigating and sharing digital content</li>
+                    <li>responsible online interaction</li>
+                    <li>building an online identity</li>
+                    <li>maintaining their digital reputation.</li>
+                </ul>
+            </p>
+        </aside>
+        <article>
+            <h2 id="h2">How can social media help to develop critical thinking skills?</h2>
+            <p>As technology has made it easier for people to share a huge range of news and information, it has also become necessary to think 
+                about the reliability of online content. It can be difficult to tell whether something is real or fake, especially when it looks
+                like it comes from a trusted friend or an official source. You can help your child to develop their critical thinking skills by 
+                giving them strategies to judge the reliability of different sources of information.
+            </p>
+        </article>
+        <footer>
+            <h1 id="hi"> IMPORTANCE OF SOCIAL MEDIA</h1>
+        </footer>
+    </div>
+</body>
+</html>

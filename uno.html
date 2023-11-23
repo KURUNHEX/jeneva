@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="somebody">
+    <meta http-equiv="refresh" content="1000">
+    <title>HTML-CSS Layout</title>
+    <style>
+       body {
+        background-image: linear-gradient(to bottom right, yellow, green);
+        padding: 50px 70px;
+       }
+
+       .grid {
+          display: grid;
+          grid-template-columns: 1fr 400px;
+          grid-template-rows: 80px 70px 1fr 1fr 70px;
+          height: 100vh;
+          gap: 2px;
+       }
+
+       h1,h2,h3 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+       }
+       
+       h1 {
+          color: #000000;
+          text-align: center;
+          font-size: 40px;
+          font-family: Arial, Helvetica, sans-serif;
+       }
+
+       #h2 {
+        color: rgb(0, 0, 0);
+        text-align: center;
+       }
+       
+       #h1 {
+        text-align: center;
+        color: rgb(0, 0, 0);
+       }
+       #hi {
+        color: rgb(0, 0, 0);
+        font-size: 110%;
+       }
+
+       header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+
+       nav {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+       .topnav a {
+        float: left;
+        display: block;
+        color: #000000;
+        text-align: center;
+        padding: 20px 30px;
+        text-decoration: none;
+    }
+    .topnav a:hover {
+       background-color: #ffffff;
+       color: black;
+    }
+
+
+       section {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        border: 2px solid black;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+       }
+
+       aside {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        border: 2px solid black;
+        padding: 10px;
+        font-size: 100%;
+        color: rgb(0, 0, 0);
+       }
+
+       article {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        border: 2px solid black;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+       }
+
+       footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+
+       }
+       img {
+        text-align: center;
+        width: 600px;
+        height: 315px;
+     
+       }
+    </style>
+</head>
+<body>
+    <h1>HTML LAYOUT</h1>
+    <div class="grid">  
+        <header>
+            <h2 id="h1"> MOST FAMOUS MUSICIAN/COMPPOSER IN THE WORLD</h2>
+        </header>
+        <nav>
+            <div class="topnav">
+                <p style="text-align: center;"> <a href="uno.html"> Antonio Vivaldi</a> </p>
+                  <p style="text-align: center;"> <a href="U2.html">  Ludwig Van Beethoven</a></p>
+                <p style="text-align: center;"> <a href="U3.html">The Beatles</a></p>
+            </div>
+        </nav>
+        <section>
+            <h2 id="h1">MUSICIANS OF ALL TIME, IN ANY GENRE: THE COMPLETE LIST</h2>
+            Our team of writers listened to thousands and thousands of hours of music for this list, digging deep into the annals of history 
+            and exploring the sounds of the entire globe. We painstakingly researched the shit out of practically all music ever made, modern 
+            and classical, popular and experimental, chart-topping and obscure. You may not agree with every artist on this list, but one thing 
+            is for certain: You're going to respect the hell out of it. <b>-Ben Westhoff</b><br>
+        </section>
+        <aside>
+            <h2 id="h2">Antonio Vivaldi</h2>
+            <b> was an Italian composer, virtuoso violinist and impresario of Baroque music.[4] Along with Johann Sebastian Bach and George 
+                Frideric Handel, Vivaldi ranks amongst the greatest Baroque composers and his influence during his lifetime was widespread 
+                across Europe, giving origin to many imitators and admirers. He pioneered many developments in orchestration, violin technique 
+                and programmatic music.[5] He consolidated the emerging concerto form into a widely accepted and followed idiom.</b>
+                <p>Vivaldi composed many instrumental concertos, for the violin and a variety of other musical instruments, as well as sacred choral 
+                    works and more than fifty operas. His best-known work is a series of violin concertos known as The Four Seasons. Many of his 
+                    compositions were written for the all-female music ensemble of the Ospedale della Pietà, a home for abandoned children. Vivaldi 
+                    began studying for the priesthood at the age of 15 and was ordained at 25, but was given dispensation to no longer say public 
+                    Masses due to a health problem.[6] Vivaldi also had some success with expensive stagings of his operas in Venice, Mantua and 
+                    Vienna. After meeting the Emperor Charles VI, Vivaldi moved to Vienna, hoping for royal support. However, the Emperor died soon 
+                    after Vivaldi's arrival, and Vivaldi himself died in poverty less than a year later.</p>
+        </aside>
+        <article>
+            <h2 id="h2">Antonio Vivaldi Portray </h2>
+            <p style="text-align: center;"> <img src="Vivaldi.jpg"></p>
+
+            </p>
+        </article>
+        <footer>
+            <h1 id="hi">To recap, these are some of the most famous musician/composer in the world:</h1>
+        </footer>
+    </div>
+</body>
+</html>

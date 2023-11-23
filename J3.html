@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="somebody">
+    <meta http-equiv="refresh" content="1000">
+    <title>HTML-CSS Layout</title>
+    <style>
+       body {
+        background-image: linear-gradient(to bottom right, purple, blue);
+        padding: 50px 70px;
+       }
+
+       .grid {
+          display: grid;
+          grid-template-columns: 1fr 400px;
+          grid-template-rows: 80px 70px 1fr 1fr 70px;
+          height: 100vh;
+          gap: 2px;
+       }
+
+       h1,h2,h3 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+       }
+       
+       h1 {
+          color: #000000;
+          text-align: center;
+          font-size: 40px;
+          font-family: Arial, Helvetica, sans-serif;
+       }
+
+       #h2 {
+        color: rgb(0, 0, 0);
+        text-align: center;
+       }
+       
+       #h1 {
+        text-align: center;
+        color: rgb(0, 0, 0);
+       }
+       #hi {
+        color: rgb(0, 0, 0);
+        font-size: 110%;
+       }
+
+       header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+
+       nav {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+       .topnav a {
+        float: left;
+        display: block;
+        color: #000000;
+        text-align: center;
+        padding: 20px 30px;
+        text-decoration: none;
+    }
+    .topnav a:hover {
+       background-color: #ffffff;
+       color: black;
+    }
+
+
+       section {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        border: 2px solid black;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+       }
+
+       aside {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        border: 2px solid black;
+        padding: 10px;
+        font-size: 130%;
+        color: rgb(0, 0, 0);
+       }
+
+       article {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        border: 2px solid black;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+       }
+
+       footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+
+       }
+       img {
+        text-align: center;
+        width: 600px;
+        height: 315px;
+     
+       }
+    </style>
+</head>
+<body>
+    <h1>HTML LAYOUT</h1>
+    <div class="grid">  
+        <header>
+            <h2 id="h1">Pablo Picasso</h2>
+        </header>
+        <nav>
+            <div class="topnav">
+                <p style="text-align: center;"> <a href="joseph.html"> VINCENT VAN GOGH</a> </p>
+                  <p style="text-align: center;"> <a href="J2.HTML">  LEONARDO DA VINCI</a></p>
+                <p style="text-align: center;"> <a href="J3.html">PABLO PICASSO</a></p>
+            </div>
+        </nav>
+        <section>
+            <h2 id="h1">Pablo Picasso</h2>
+            One of the most famous painters in the world, Pablo Picasso was born in Spain yet lived most of his life in France. 
+            A talented ceramicist, printmaker, theater designer and sculptor as well as a painter, Picasso has had a lasting impact on modern 
+            art.<br>
+        </section>
+        <aside>
+            <h2 id="h2">DEFINITIONS</h2>
+            <b>He created over 20,000 artworks, costumes, ceramics and prints. Picasso’s famous Blue Period is thought to have been inspired by 
+                the suicide of his friend Casagemas.</b> <br>
+                <p>Picasso was also influenced by African and Oceanic art, particularly in his seminal artwork, Les Demoiselles d’Avignon. 
+                    Together with the artist Georges Braque, he developed the principles of Analytic Cubism.</p>
+        </aside>
+        <article>
+            <h2 id="h2">Famous Picasso paintings: </h2>
+            <p style="text-align: center;">Guernica, Child with a Dove, Les Demoiselles d’Avignon<br>
+            <p style="text-align: center;"> <img src="picasso.jpg"></p>
+
+            </p>
+        </article>
+        <footer>
+            <h1 id="hi">To recap, these are some of the most famous painters in the world:</h1>
+        </footer>
+    </div>
+</body>
+</html>

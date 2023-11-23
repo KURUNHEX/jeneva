@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="somebody">
+    <meta http-equiv="refresh" content="1000">
+    <title>HTML-CSS Layout</title>
+    <style>
+       body {
+        background-image: linear-gradient(to bottom right, blue, white);
+        padding: 50px 70px;
+       }
+
+       .grid {
+          display: grid;
+          grid-template-columns: 1fr 400px;
+          grid-template-rows: 80px 70px 1fr 1fr 70px;
+          height: 100vh;
+          gap: 2px;
+       }
+       
+       h1 {
+          color: #ffffff;
+          text-align: center;
+          font-size: 40px;
+          font-family: Arial, Helvetica, sans-serif;
+       }
+
+       #h2 {
+        color: rgb(0, 0, 0);
+       }
+       
+       #h1 {
+        text-align: center;
+        color: white;
+       }
+       #hi {
+        color: rgb(0, 0, 0);
+        font-size: 150%;
+       }
+
+       header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+
+       nav {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+       .topnav a {
+        float: left;
+        display: block;
+        color: #000000;
+        text-align: center;
+        padding: 20px 30px;
+        text-decoration: none;
+    }
+    .topnav a:hover {
+       background-color: #ffffff;
+       color: black;
+    }
+
+
+       section {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        border: 2px solid black;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+       }
+
+       aside {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        border: 2px solid black;
+        padding: 10px;
+        font-size: 100%;
+        color: rgb(0, 0, 0);
+       }
+
+       article {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        border: 2px solid black;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+       }
+
+       footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+
+       }
+    </style>
+</head>
+<body>
+    <h1>HTML LAYOUT</h1>
+    <div class="grid">
+        <header>
+            <h2 id="h1"> Social Media: Definition, Importance, Top Websites & Apps</h2>
+        </header>
+        <nav>
+            <div class="topnav">
+                <p style="text-align: center;"> <a href="stefano.html">DEFINITIONS & TYPES</a> </p>
+                  <p style="text-align: center;"> <a href="S2.html">ADVANTAGES</a></p>
+                <p style="text-align: center;"> <a href="S3.html">DISADVANTAGES</a></p>
+            </div>
+        </nav>
+        <section>
+            <h2 id="h2">What Is Social Media?</h2>
+            <p>Social media refers to a variety of technologies that facilitate the sharing of ideas and information among their users. 
+                From Facebook and Instagram to X platform (formerly Twitter) and YouTube, more than 4.7 billion people use social media, equal 
+                to roughly 60% of the world's population. In early 2023, 94.8% of users accessed chat and messaging apps and websites, followed 
+                closely by social platforms, with 94.6% of users. </p>
+        </section>
+        <aside>
+            <h2 id="h2">The Top 10 Social Media Platforms Worldwide</h2>
+            <p> These were the most widely used social media providers as of January 2023, according to DataReportal:</p><br>
+                <ol>
+                    <li>Facebook (2.96 billion users)</li>
+                    <li>YouTube (2.51 billion users)</li>
+                    <li>WhatsApp (2 billion users)</li>
+                    <li>Instagram (2 billion users)</li>
+                    <li>WeChat (1.31 billion users)</li>
+                    <li>TikTok (1.05 billion users)</li>
+                    <li>Facebook Messenger (931 million users)</li>
+                    <li>Douyin (715 million users)</li>
+                    <li>Telegram (700 million users)</li>
+                    <li>Snapchat (635 million users)</li>
+                </ol>
+                <p> Interestingly, two that are especially well-known in the U.S.—X platform and Pinterest—didn't make the top 10 list globally.
+                    X platform was 14th, with 556 million users worldwide, while Pinterest was 15th with 445 million</p><br>
+        </aside>
+        <article>
+            <h2 id="h2">What Social Media Is Used for Today</h2>
+            <p>Social media platforms are often divided into six categories: social networking, social bookmarking, social news, media sharing, microblogging, and online forums.<br>
+               <br>
+                These diverse platforms serve a vast range of purposes and user interests. Some appeal to hobbyists, others to people in their 
+                work lives. People use them to find others across the globe who share their political or other views. Entertainers use social 
+                media to engage with fans, politicians with voters, charities with donors. Governments often turn to social media to convey 
+                vital information during emergencies.<br>
+                <br>
+                For businesses, social media has become a key marketing tool. Companies use it to find and engage with customers, drive sales 
+                through advertising and promotion, identify fast-moving consumer trends, provide customer service or support, and collect data 
+                on users, sometimes surreptitiously.<br>
+
+            </p><br>
+        </article>
+        <footer>
+            <h1 id="hi"> THINGS YOU SHOULD KNOW </h1>
+        </footer>
+    </div>
+</body>
+</html>

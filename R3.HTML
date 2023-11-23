@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pearla">
+    <meta http-equiv="refresh" content="1000">
+    <title>HTML Layout</title>
+    <style>
+       body {
+        background-color:  white;
+        padding: 50px 70px;
+       }
+
+       .grid {
+          display: grid;
+          grid-template-columns: 1fr 400px;
+          grid-template-rows: 80px 70px 1fr 1fr 70px;
+          height: 100vh;
+          gap: 2px;
+       }
+       
+       h1 {
+          color: #000000;
+          text-align: center;
+          font-size: 40px;
+          font-family: Arial, Helvetica, sans-serif;
+       }
+
+       #h2 {
+        color: rgb(255, 255, 255);
+       }
+       
+       #h1 {
+        text-align: center;
+        color: white;
+       }
+       #hi {
+        color: white;
+        font-size: 150%;
+       }
+
+       header {
+        background-color: #acaaab;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+
+       nav {
+        background-color: #555354;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+
+       .topnav {
+        background-color: #310a20;
+       }
+       .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 20px 30px;
+        text-decoration: none;
+    }
+    .topnav a:hover {
+       background-color: #b4b0b0;
+       color: black;
+    }
+
+
+       section {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color: #a0a0a0;
+        border: 2px solid black;
+        padding: 10px;
+        color: white;
+       }
+
+       aside {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        background-color: #575355;
+        border: 2px solid black;
+        padding: 10px;
+        font-size: 100%;
+        color: white;
+       }
+
+       article {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        background-color: #a0a0a0;
+        border: 2px solid black;
+        padding: 15px;
+        color: white;
+       }
+
+       footer {
+        background-color: #797677;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+
+       }
+    </style>
+</head>
+<body>
+    <h1>HTML LAYOUT</h1>
+    <div class="grid">
+        <header>
+            <h2 id="h1">  WHAT DOES A BACK-END DEVELOPER DO?</h2>
+        </header>
+        <nav>
+            <div class="topnav">
+                <p style="text-align: center;"> <a href="ralph.html">WEB DEVELOPER</a> </p>
+                  <p style="text-align: center;"> <a href="R2.HTML">FRONT-END DEVELOPER</a></p>
+                <p style="text-align: center;"> <a href="R3.HTML">BACK-END DEVELOPER</a></p>
+            </div>
+        </nav>
+        <section>
+            <h2 id="h2">BACK-END DEVELOPER</h2>
+            <p>Back-end developers are the experts who build and maintain the mechanisms that process data and perform actions on websites. 
+                Unlike front-end developers, who control everything you can see on a website, back-end developers are involved in data storage, 
+                security, and other server-side functions that you cannot see.</p>
+        </section>
+        <aside>
+            <h2 id="h2">Back-end developer tasks and responsibilities</h2>
+            <p> Back-end developers are required to have technical expertise, analytical thinking, and excellent collaboration skills. 
+                As a back-end web developer, you should be able to work independently to design the web infrastructure. <br>
+                <br>
+                Here’s what many back-end developers do on a day-to-day basis:<br>
+                <br>
+                <b>Build and maintain websites:</b> A back-end developer’s main responsibility is to use various tools, frameworks, 
+                and languages to determine how best to develop intuitive, user-friendly prototypes and turn them into websites. 
+                This requires an understanding of cross-platform functionality and compatibility.
+                <b>Write high-quality code:</b> To produce sustainable web applications, developers must write clean and easily maintainable 
+                code.
+                <b>Perform quality assurance (QA) testing:</b> Create and oversee testing schedules to optimize user interface and experience, 
+                ensuring optimal display on various browsers and devices.
+                </p>
+        </aside>
+        <article>
+            <h2 id="h2">Back-end developer tasks and responsibilities</h2>
+            <p>Back-end developers are required to have technical expertise, analytical thinking, and excellent collaboration skills. 
+                As a back-end web developer, you should be able to work independently to design the web infrastructure. 
+            </p><br>
+        </article>
+        <footer>
+            <h1 id="hi"> INFO ABOUT BACK-END DEVELOPER</h1>
+        </footer>
+    </div>
+</body>
+</html>
